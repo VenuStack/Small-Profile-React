@@ -35,7 +35,7 @@ function App() {
       <section id="next-steps">
         <div id="docs">
           <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
+            <use href="/Small-Profile-React/icons.svg#documentation-icon"></use>
           </svg>
           <h2>Documentation</h2>
           <p>Your questions, answered</p>
@@ -56,7 +56,7 @@ function App() {
         </div>
         <div id="social">
           <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
+            <use href="/Small-Profile-React/icons.svg#social-icon"></use>
           </svg>
           <h2>Connect with us</h2>
           <p>Join the Vite community</p>
