@@ -1,50 +1,195 @@
+/* ===== General ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: black;
-    color: white;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #222;
 }
 
-h6 {
-    color: aqua;
-    font-size: 20px;
-}
 
-#main1 {
-    display: flex;
-    justify-content: center;
-}
+/* ===== Navbar ===== */
 
-#card {
-    border: 2px solid wheat;
-    border-radius: 20px;
-    width: 300px;
-    text-align: center;
+.navbar {
+    background: white;
+    padding: 18px 8%;
 
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 
-    padding: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
 }
 
-#img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+.navbar h2 {
+    color: #667eea;
 }
 
-#card h1,
-#card h6,
-#card p {
-    margin: 10px 0;
-}
-
-.link {
+.nav-links {
     display: flex;
-    flex-direction: row;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #444;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #764ba2;
+}
+
+
+/* ===== Main ===== */
+
+main {
+    min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+/* ===== Profile Card ===== */
+
+.profile-card {
+    width: 400px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* ===== Profile Image ===== */
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #667eea;
+
+    margin-bottom: 20px;
+}
+
+
+/* ===== Text ===== */
+
+.profile-card h1 {
+    font-size: 32px;
+    color: #333;
+
+    margin-bottom: 8px;
+}
+
+.profile-card h2 {
+    font-size: 21px;
+    color: #764ba2;
+
+    margin-bottom: 20px;
+}
+
+.profile-card p {
+    color: #555;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* ===== Social Links ===== */
+
+.social-links {
+    display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.link a {
-    display: block;
+.social-links a {
+    padding: 10px 20px;
+
+    color: white;
+    background: #667eea;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #764ba2;
+
+    transform: scale(1.05);
+}
+
+
+/* ===== Footer ===== */
+
+footer {
+    padding: 20px;
+
+    text-align: center;
+
+    background: white;
+
+    color: #555;
+}
+
+
+/* ===== Mobile ===== */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .profile-card {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
 }
